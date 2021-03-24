@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --textPink: rgb(193, 28, 214);
+    font-size: 100%;
+    --imgWidth: 30vw;
+    --imgHeight: 30vh;
+    --companyWidth:85vw;
+    --companyHeight: 85vh;
+    --applicationsWidth:45%;
+    --applicationsHeight:45%;
+}
+
+h1 {
+    font-size: 3rem;
+    color:var(--textPink);
+}
+
+h2{
+    color:var(--textPink);
+}
+
+h3{
+    color:var(--textPink);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+header {
+    display:inline-block;
+    color:var(--textPink);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 20px;
+    width:100%;
+    background-color: #2a607c;
+}
+
+nav {
+    display:flex;
+    flex-flow: row nowrap;
+    font-size: 2rem;
+}
+
+header h2{
+    flex:1 1 auto;
+    font-size: 80%;
+    color: white;
+}
+
+nav ul {
+    flex:1 2 auto;
+}
+
+nav ul li {
+    display:inline-flex;
+    font-size: 80%;
+    flex:1 2 auto;
+}    
+
+nav a {
+    color: white;
+}
+
+.effects {
+    color: var(--textPink);
+    font-size: 80%;
+    font-style: italic;
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+main {
+    display:flex;
+    flex-wrap:wrap;
+} 
+
+.applications {
+    display:flex;
+    flex-direction:column;
+    width:var(--applicationsWidth);
+    border: dashed black;
+    margin:1.5%;
+    padding:1%;
+}
+
+.applications ul li{
+    margin-left:30px;
+}
+
+.applications a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:black;
+}
+
+.company {
+    display:flex;
+    width:80%;
+    flex-direction:row;
+}
+
+.company p{
+    display:inline-flex; 
+    flex:1 1 auto;
+    align-items:center;
+    flex-wrap: wrap;
+    font-size:2rem;
+    margin-left:10px;
+}
+
+.card {
+    position:relative;
+    display:block;
+}
+
+.card img{
+    height:var(--companyHeight);
+    width:var(--companyWidth);
+} 
+
+.card .img-top {
+    position:absolute;
+    display:none;
+    height:var(--companyHeight);
+    width:var(--companyWidth); 
+    top:0;
+    left:0;
+    z-index: 99;
+
+}
+
+.card:hover .img-top{
+    display:block;
+}
+
+a img{
+    width:var(--imgWidth);
+    height:var(--imgHeight);
+} 
+
+#aboutMe a{
+    color:var(--textPink);
+    font-size:1.5rem;
+} 
+
+#aboutMe img{
+    width:var(--imgWidth);
+    height:var(--imgHeight);
+}
+
+a:hover {
+    color:black;
+}
+
+footer {
+    width:100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #2a607c;
+}
+
+.icons {
+    display:flex;
+}
+
+.icons li{
+    flex-direction:row;
+    flex:1 1 auto;
+    list-style-type: none;
+    margin-top:15px;
+    font-size:2rem;
+}
+
+.icons li a {
+   justify-content: space-evenly;
+    color:white;
+}
+
+footer h1{
+    color:white;
+}
+
+.fa-facebook { 
+    list-style-type: none;
+    margin-right:22px; 
+} 
+.fa-linkedin{
+    list-style-type: none;
+    margin-right:15px; 
+}
+.fa-twitter {
+    list-style-type: none;
+    margin-right:15px; 
+}
+.fa-instagram {
+    list-style-type: none;
+    margin-right:15px; 
+}
+.fa-envelope-o {
+    margin-right:10px; 
+}
+
+@keyframes example {
+    from {background-color:yellow;}
+    to {background-color:green;}  
+}
+
+
+
+@media screen and (max-width: 410px) {
+
+    nav {
+        flex-flow: column nowrap;
+    }
+    nav ul li {
+        display:inline;
+    }
+  
+    .applications {
+        --applicationsWidth:40%;
+        width:var(--applicationsWidth);
+    }
+
+    .company {
+        --companyWidth:85vw;
+        --companyHeight:70vh;
+        width:var(--companyWidth);
+    }
+
+    .company p{
+        font-size:1rem;
+    }
+
+    .icons li{
+        font-size:1rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        flex-flow: column nowrap;
+    }
+    nav ul li {
+        display:inline;
+    }
+  
+    .applications {
+        --applicationsWidth:40%;
+        width:var(--applicationsWidth);
+    }
+
+    .company {
+        --companyWidth:85vw;
+        --companyHeight:70vh;
+        width:var(--companyWidth);
+    }
+
+    .company p{
+        font-size:1.5rem;
+    }
+
+    a img{
+        width:var(--imgWidth);
+        height:var(--imgHeight);
+    } 
+    
+}

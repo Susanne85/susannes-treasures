@@ -12,7 +12,7 @@ The front page of this project allows the user to move the cursor over the pictu
 
 This screen shot displays the first two projects that I created.
 
-![First and Second projects](./assets/images/3_3eadme.png)
+![First and Second projects](./assets/images/3_readme.png)
 
 This screen shot displays the next two projects that I created.
-![Third and Fourth projects](./assets/images/4_4eadme.png)
+![Third and Fourth projects](./assets/images/4_readme.png)

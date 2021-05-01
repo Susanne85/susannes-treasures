@@ -106,11 +106,10 @@ main {
 
 .company p{
     display:inline-flex; 
-    flex:1 1 auto;
+    flex:1 2 auto;
     align-items:center;
     flex-wrap: wrap;
-    font-size:2rem;
-    margin-left:10px;
+    font-size: 1.5rem;
 }
 
 .card {
@@ -154,15 +153,17 @@ a img{
 }
 
 .old-pic{
-    background-image: url(../Images/house-black.jpg)
+    background-image: url(../images/house-black.jpg)
 }
 .new-pic{
-    background-image: url(../Images/house-colour.png);
+    background-image: url(../images/house-colour.png);
 }
 
 #hero{
-    width: 100%;
+    width: 100vw;
     height: 85vh;
+    margin-left:1.5%;
+    margin-right:1.5%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,14 +244,14 @@ footer h1{
     }
 
     .company {
-        --companyWidth:85vw;
+        --companyWidth:100vw;
         --companyHeight:70vh;
         width:var(--companyWidth);
     }
 
-    .company p{
+   /* .company p{
         font-size:1rem;
-    }
+    } */
 
     .icons li{
         font-size:1rem;
@@ -271,15 +272,14 @@ footer h1{
     }
 
     .company {
-        --companyWidth:85vw;
+        --companyWidth:100vw;
         --companyHeight:70vh;
         width:var(--companyWidth);
     }
 
-    .company p{
+   /* .company p{
         font-size:1.5rem;
-    }
-
+    } */
     a img{
         width:var(--imgWidth);
         height:var(--imgHeight);

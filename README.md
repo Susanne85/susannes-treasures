@@ -1,10 +1,10 @@
 This project is the start of my portfolio page.  It displays all the projects that I have completed.
 
 # Table of Contents
-1. [Link](##Link)
-2. [Application](##Application)
+1. [Link](#Link)
+2. [Application](#Application)
 
-#Link
+## Link
 
 The link to the deployed application is : https://susanne85.github.io/susannes-treasures/
 
@@ -21,5 +21,5 @@ This screen shot displays the first two projects that I created.
 This screen shot displays the next two projects that I created.
 ![Third and Fourth projects](./assets/images/4_readme.png)
 
-#Application
+## Application
 Here is my application
